@@ -21,9 +21,31 @@ if (hacker1.length > hacker2.length) {
 
 let driverName = ""
 for (let i = 0; i < hacker1.length; i++) {
-    return hacker1.charAt(i).toUpperCase();
-    
+    driverName += hacker1.charAt(i).toUpperCase() + " ";
 }
 
+console.log (driverName)
 
+// Iteration 3.2
+
+let nameReverse =""
+for (let i = hacker2.length - 1; i >= 0; i--){
+    nameReverse += hacker2[i];
+}
+
+console.log (nameReverse)
+
+// Iteration 3.3
+
+let array = [hacker1, hacker2]
+
+array.sort();
+
+if (hacker1 == hacker2){
+    console.log ("What?! You both have the same name")
+} else if (array[0] == hacker2){
+    console.log ("Yo, the navigator goes first definitely.")
+} else if(array[0] == hacker1){
+    console.log("The drivers name goes first")
+}
 
